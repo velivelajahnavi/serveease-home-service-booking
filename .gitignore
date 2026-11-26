@@ -1,0 +1,25 @@
+# Local Secrets & Environment Files
+application-local.properties
+.env
+.env.local
+.env.*.local
+
+# Java / Maven
+backend/target/
+*.jar
+*.war
+*.log
+
+# IntelliJ IDEA & VS Code
+.idea/
+*.iml
+.vscode/
+
+# Node / Vite / React
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
