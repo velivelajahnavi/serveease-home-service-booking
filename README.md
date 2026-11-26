@@ -1,12 +1,12 @@
 # ServeEase — Home Service Booking Platform
 
-ServeEase is a full-stack, role-based home service booking web application built with Spring Boot 3 (Java 21), MySQL, and React (Vite + Bootstrap 5). It provides dedicated portals for Admins, Customers, and Service Providers with JWT authentication and automated scheduling rules.
+ServeEase is a full-stack, role-based home service booking web application built with **Spring Boot 3 (Java 21)**, **MySQL**, and **React (Vite + Bootstrap 5)**. It provides dedicated portals for **Admins**, **Customers**, and **Service Providers** with JWT authentication and automated scheduling rules.
 
 ## Tech Stack
 
 | Layer | Technologies |
-| :--- | :---  |
-| **Backend**  | Java 21, Spring Boot 3.5, Spring Security (JWT), Spring Data JPA, Hibernate, Maven|
+| :--- | :--- |
+| **Backend** | Java 21, Spring Boot 3.5, Spring Security (JWT), Spring Data JPA, Hibernate, Maven |
 | **Database** | MySQL 8 (`serveease_db`, 7 relational tables) |
 | **Frontend** | React 19, Vite, React Router, Axios, Bootstrap 5 |
 
@@ -63,3 +63,18 @@ On first startup, `DataSeeder` populates sample users, services, and provider as
 1. Create a file `backend/src/main/resources/application-local.properties`:
    ```properties
    spring.datasource.password=YOUR_MYSQL_PASSWORD
+   ```
+2. Start the backend server:
+   ```bash
+   cd backend
+   mvn spring-boot:run
+   ```
+   The API runs on `http://localhost:8080` and automatically creates `serveease_db` and its tables.
+
+### 2. Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Open `http://localhost:5173` in your browser.
